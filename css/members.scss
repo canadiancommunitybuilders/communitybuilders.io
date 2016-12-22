@@ -4,6 +4,10 @@
 @import "base";
 @import "variables";
 
+main {
+  padding: $padding * 2 0;
+}
+
 h2 {
   text-align: center;
 }

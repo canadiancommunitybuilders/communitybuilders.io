@@ -1,7 +1,7 @@
 ---
 name: Ainsleigh Burelle
 slack: ainsleighburelle 
-twitter: ainsleigh
+twitter: ainsleelise
 ---
 
 Ainsleigh is the Marketing Associate at NEXT Canada, where she manages digital marketing strategy, helps attract the nation's best & brightest entrepreneurs, and organizes the occasional Startup Sprint Weekend. She’s also active in the Toronto tech community and leads the Startup Open House Toronto initiative, which in 2016 brought together 3000+ participants with over 150 startups across the city.  
