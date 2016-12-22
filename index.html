@@ -1,0 +1,39 @@
+---
+layout: home
+---
+
+<section id="members">
+  <div class="container">
+    <h2>Members</h2>
+
+    {% for member in site.members %}
+      {% assign id = member.name | slugify %}
+
+      <a href="/members/#{{ id }}" class="member" style="background-image: url('/assets/images/members/{{ id }}.jpg')" data-id="{{ member.name | slugify }}">
+        <h3>{{ member.name }}</h3>
+      </a>
+    {% endfor %}
+
+    <div class="member" style="background-image: url('/assets/images/members/you.jpg')" data-id="join">
+      <h3>YOU!</h3>
+    </div>
+  </div>
+</section>
+
+<section id="conduct">
+  <div class="container">
+    {% capture conduct %}{% include conduct.md %}{% endcapture %}
+    {{ conduct | markdownify }}
+  </div>
+</section>
+
+<section id="partners">
+  <h2>Partners</h2>
+
+  <div class="container">
+    {% for partner in site.data.partners %}
+      <a href="{{ partner.link }}" target="_blank"><img src="/assets/images/partners/{{ partner.name | slugify }}.png"/></a>
+    {% endfor %}
+  </div>
+</section>
+

@@ -1,0 +1,23 @@
+---
+---
+
+@import "base";
+@import "variables";
+
+h2 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  padding: $padding 0;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    float: left;
+    margin-right: $padding / 2;
+    margin-bottom: $padding / 2;
+  }
+}

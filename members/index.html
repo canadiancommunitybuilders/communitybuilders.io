@@ -1,0 +1,20 @@
+---
+layout: members
+---
+
+<h2>Our Founding Members</h2>
+
+{% for member in site.members %}
+  <section id="{{ member.name | slugify }}" class="container">
+    <img src="/assets/images/members/{{ member.name | slugify }}.jpg"/>
+
+    <div class="details">
+      <h3>{{ member.name }}</h3>
+
+      <a href="#"><i class="fa fa-slack"></i> @{{ member.slack }}</a><br/>
+      <a href="https://twitter.com/{{ member.twitter }}" target="_blank"><i class="fa fa-twitter"></i> @{{ member.twitter }}</a>
+
+      <p>{{ member.content }}</p>
+    </div>
+  </section>
+{% endfor %}

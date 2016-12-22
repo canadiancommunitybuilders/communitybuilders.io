@@ -1,0 +1,67 @@
+{% capture title %}{% if page.title %}{{ page.title | replace: '"', "'" }} - {% endif %}{{ site.title }}{% endcapture %}
+{% capture description %}{% if page.description %}{{ page.description | markdownify | strip_html | strip_newlines | replace: '"', "'" }}{% else %}{{ site.description | markdownify | strip_html | strip_newlines  | replace: '"', "'"}}{% endif %}{% endcapture %}
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+  <title>{{ title }}</title>
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="description" content="{{ description }}"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16"/>
+  <link rel="manifest" href="/assets/manifest.json"/>
+  <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#dc202f"/>
+  <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico"/>
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}"/>
+  <meta name="application-name" content="{{ site.title }}"/>
+  <meta name="msapplication-config" content="/assets/browserconfig.xml"/>
+  <meta name="theme-color" content="#dc202f"/>
+
+  {% if page.layout == 'post' %}
+    <meta property="og:type" content="article"/>
+    <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}"/>
+    <meta property="article:author" content="{{ site.url }}/about/"/>
+
+    {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag }}"/>
+    {% endfor %}
+
+    <meta itemprop="image" content="{{ 'thumb.jpg' | prepend: page.url | prepend: site.url }}"/>
+    <meta property="og:image" content="{{ 'thumb.jpg' | prepend: page.url | prepend: site.url }}"/>
+    <meta name="twitter:image:src" content="{{ 'thumb.jpg' | prepend: page.url | prepend: site.url }}"/>
+
+  {% else %}
+    <meta property="og:type" content="website">
+
+    <meta itemprop="image" content="{{ '/assets/images/avatar.jpg' | prepend: site.url }}"/>
+    <meta property="og:image" content="{{ '/assets/images/avatar.jpg' | prepend: site.url }}"/>
+    <meta name="twitter:image:src" content="{{ '/assets/images/avatar.jpg' | prepend: site.url }}"/>
+  {% endif %}
+
+  <meta itemprop="name" content="{{ title }}"/>
+  <meta itemprop="description" content="{{ description }}"/>
+
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:title" content="{{ title }}"/>
+  <meta property="og:description" content="{{ description }}"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+  <meta property="fb:admins" content="227304446"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@{{ site.twitter }}"/>
+  <meta name="twitter:title" content="{{ title }}"/>
+  <meta name="twitter:description" content="{{ description }}"/>
+  <meta name="twitter:creator" content="@{{ site.twitter }}"/>
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}"/>
+  <meta name="twitter:domain" content="{{ site.url | remove: 'https://' }}"/>
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
+
+  <link rel="stylesheet" href="/css/{{ page.layout }}.css?time={{ site.time | date_to_xmlschema }}"/>
+</head>
