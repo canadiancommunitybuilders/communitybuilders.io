@@ -1,6 +1,6 @@
 ---
 name: Oksana Salamaszek
-slack: Oksana
+slack: oksy_twg 
 twitter: Oksana
 ---
 

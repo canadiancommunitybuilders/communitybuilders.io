@@ -1,6 +1,6 @@
 ---
 name: Ainsleigh Burelle
-slack: ainsleigh
+slack: ainsleighburelle 
 twitter: ainsleigh
 ---
 

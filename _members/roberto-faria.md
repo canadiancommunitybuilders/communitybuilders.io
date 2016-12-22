@@ -1,6 +1,6 @@
 ---
 name: Roberto Faria
-slack: Roberto
+slack: robertofaria 
 twitter: Roberto
 ---
 

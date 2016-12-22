@@ -1,6 +1,6 @@
 ---
 name: Alex Bevilacqua
-slack: Alex
+slack: alex_pictatic
 twitter: Alex
 ---
 

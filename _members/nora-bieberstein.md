@@ -1,6 +1,6 @@
 ---
 name: Nora Bieberstein
-slack: Nora
+slack: nora
 twitter: Nora
 ---
 

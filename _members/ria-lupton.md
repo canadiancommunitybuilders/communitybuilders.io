@@ -1,6 +1,6 @@
 ---
 name: Ria Lupton
-slack: Ria
+slack: rua.lupton
 twitter: Ria
 ---
 

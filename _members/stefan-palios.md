@@ -1,6 +1,6 @@
 ---
 name: Stefan Palios
-slack: Stefan
+slack: stefanpalios1 
 twitter: Stefan
 ---
 
