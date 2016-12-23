@@ -14,7 +14,11 @@ $ jekyll serve
 
 ## Content Management
 
-###### Directors
+A local Administration interface is provided.
+
+> after installing Jekyll, visit: `http://localhost:4000/admin` on your local machine to access the interface.
+
+#### Directors
 
 The Directors is simply a [Jekyll Collection](https://jekyllrb.com/docs/collections/).
 
