@@ -192,7 +192,7 @@ section {
 
   &:before {
     @include diagonal($orange);
-    transform: rotateY(180deg) rotateX(180deg);
+    transform: rotate(180deg);
     content: '';
     display: block;
     position: absolute;
