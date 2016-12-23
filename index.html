@@ -2,19 +2,19 @@
 layout: home
 ---
 
-<section id="members">
+<section id="directors">
   <div class="container">
-    <h2>Members</h2>
+    <h2>Directors</h2>
 
-    {% for member in site.members %}
-      {% assign id = member.name | slugify %}
+    {% for director in site.directors %}
+      {% assign id = director.name | slugify %}
 
-      <a href="/members/#{{ id }}" class="member" style="background-image: url('/assets/images/members/{{ id }}.jpg')" data-id="{{ member.name | slugify }}">
-        <h3>{{ member.name }}</h3>
+      <a href="/directors/#{{ id }}" class="director" style="background-image: url('/assets/images/directors/{{ id }}.jpg')" data-id="{{ director.name | slugify }}">
+        <h3>{{ director.name }}</h3>
       </a>
     {% endfor %}
 
-    <div class="member" style="background-image: url('/assets/images/members/you.jpg')" data-id="join">
+    <div class="director" style="background-image: url('/assets/images/directors/you.jpg')" data-id="join">
       <h3>YOU!</h3>
     </div>
   </div>

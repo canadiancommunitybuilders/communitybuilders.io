@@ -6,7 +6,7 @@ url: https://communitybuilders.io
 twitter: communi_build
 
 collections:
-  - members
+  - directors
 
 gems:
 - jekyll-redirect-from

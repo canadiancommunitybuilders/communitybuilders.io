@@ -111,7 +111,7 @@ section {
   padding: $padding 0;
 }
 
-#members {
+#directors {
   background-color: $orange;
 
   .container {
@@ -129,7 +129,7 @@ section {
     }
   }
 
-  .member {
+  .director {
     width: 100px;
     height: 100px;
 
@@ -264,8 +264,8 @@ section {
     }
   }
 
-  #members {
-    .member {
+  #directors {
+    .director {
       width: 150px;
       height: 150px;
     }
@@ -297,8 +297,8 @@ section {
     }
   }
 
-  #members {
-    .member {
+  #directors {
+    .director {
       width: 200px;
       height: 200px;
     }

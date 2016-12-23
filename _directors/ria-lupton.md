@@ -1,7 +1,7 @@
 ---
 name: Ria Lupton
-slack: rua.lupton
-twitter: Ria
+slack: ria.lupton
+twitter: roastedkeyboard
 ---
 
 Ria Lupton is the Community and Marketing Manager at RIGHTSLEEVE and the Founder of Canadian Community Builders.  
