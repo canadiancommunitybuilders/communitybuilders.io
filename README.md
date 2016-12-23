@@ -5,6 +5,7 @@ System overview:
 - Engine: [Jekyll](https://jekyllrb.com/)
 - Hosting: [Github Pages](https://pages.github.com/)
 - SSL & CDN: [CloudFlare](https://www.cloudflare.com/)
+- Form Forwarding: [Formspree](https://formspree.io/)
 
 To run locally, simply install Jekyll, then run:
 
