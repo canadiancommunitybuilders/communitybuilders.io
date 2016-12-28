@@ -31,8 +31,8 @@ layout: home
   <h2>Partners</h2>
 
   <div class="container">
-    {% for partner in site.data.partners %}
-      <a href="{{ partner.link }}" target="_blank"><img src="/assets/images/partners/{{ partner.name | slugify }}.png"/></a>
+    {% for advisor in site.data.advisors %}
+      <a href="{{ advisor.link }}" target="_blank"><img alt="{{ advisor.name }}" src="/assets/images/advisors/{{ advisor.name | slugify }}.png"/></a>
     {% endfor %}
   </div>
 </section>
