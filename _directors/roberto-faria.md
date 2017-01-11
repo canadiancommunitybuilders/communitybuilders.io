@@ -1,7 +1,7 @@
 ---
 name: Roberto Faria
 slack: robertofaria 
-twitter: Roberto
+twitter: betofaria
 ---
 
 Roberto Faria is the Competitions Marketing Manager at Shopify and the co-founder of the Account Planning Group of Canada.  

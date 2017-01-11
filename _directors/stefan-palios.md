@@ -1,7 +1,7 @@
 ---
 name: Stefan Palios
 slack: stefanpalios1 
-twitter: Stefan
+twitter: stefanpalios
 ---
 
 My name is Stefan Palios - I'm a small town born and raised guy who got lucky enough to live and work in cities around the world while I was in university. Now I'm in Toronto working in global development for HackerNest, a global tech community.  

@@ -1,7 +1,7 @@
 ---
 name: Nora Bieberstein
 slack: nora
-twitter: Nora
+twitter: NoraVBieber
 ---
 
 Nora is OneEleven’s Community Manager. In her role, Nora helps to strengthen OneEleven’s presence in the wider Toronto tech startup ecosystem, manages the organization’s marketing channels and identifies valuable opportunities for OneEleven’s portfolio founders and their teams.  

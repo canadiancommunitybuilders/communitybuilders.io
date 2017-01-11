@@ -1,7 +1,7 @@
 ---
 name: Oksana Salamaszek
 slack: oksy_twg 
-twitter: Oksana
+twitter: OfficialOksy
 ---
 
 Oksana Salamaszek is the Community Engagement and Events Coordinator at TWG. Oksana loves coordinating the right circumstances to put people together to drive things forward. Oksana believes that community engagement will be more important than ever in the future and wants to help solidify best practises in the Toronto community.  
