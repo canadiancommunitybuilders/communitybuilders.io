@@ -12,7 +12,7 @@ layout: directors
       <h3>{{ director.name }}</h3>
 
       <a href="https://cancommunitybuilders.slack.com/team/{{ director.slack }}"><i class="fa fa-slack"></i> @{{ director.slack }}</a><br/>
-      <a href="https://twitter.com/{{ director.twitter }}" target="_blank"><i class="fa fa-twitter"></i> @{{ director.twitter }}</a>
+      {% if director.twitter %}<a href="https://twitter.com/{{ director.twitter }}" target="_blank"><i class="fa fa-twitter"></i> @{{ director.twitter }}</a>{% endif %}
 
       <p>{{ director.content }}</p>
     </div>

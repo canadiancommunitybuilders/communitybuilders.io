@@ -1,7 +1,6 @@
 ---
 name: Alex Bevilacqua
 slack: alex_pictatic
-twitter: Alex
 ---
 
 Alex Bevilacqua is in charge of  Partnerships and Growth at Picatic Toronto 
