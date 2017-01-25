@@ -1,6 +1,7 @@
 ---
 name: Roberto Faria
-slack: robertofaria 
+title: Competitions Marketing Manager, Shopify
+slack: robertofaria
 twitter: betofaria
 ---
 

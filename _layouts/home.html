@@ -4,43 +4,11 @@ layout: default
 
 <header>
   <div class="container">
-    <div class="brand">
-      <a href="/"><img src="/assets/images/logo.png"/></a>
+    <a href="/"><img class="logo" src="/assets/images/logo-full.png"/></a>
 
-      {{ site.description | markdownify }}
+    <div class="about">{{ site.description | markdownify }}</div>
 
-      <div class="social">
-        <a href="https://cancommunitybuilders.slack.com/" target="_blank"><i class="fa fa-3x fa-fw fa-slack"></i></a>
-        <a href="https://blog.communitybuilders.io/" target="_blank"><i class="fa fa-3x fa-fw fa-medium"></i></a>
-        <a href="https://twitter.com/communi_build" target="_blank"><i class="fa fa-3x fa-fw fa-twitter-square"></i></a>
-        <a href="https://www.instagram.com/community_builders/" target="_blank"><i class="fa fa-3x fa-fw fa-instagram"></i></a>
-        <a href="https://www.facebook.com/commbuilders/" target="_blank"><i class="fa fa-3x fa-fw fa-facebook-square"></i></a>
-      </div>
-    </div>
-
-    <form action="https://formspree.io/communitybuildersio@gmail.com" method="POST">
-      <input type="hidden" name="_next" value="{{ site.url }}/thanks/"/>
-      <input type="hidden" name="_subject" value="New Application"/>
-
-      <h2>Apply to Join</h2>
-
-      <div class="input">
-        <label>Your Name *</label>
-        <input type="text" name="name"/>
-      </div>
-
-      <div class="input">
-        <label>Your Email *</label>
-        <input type="email" name="email"/>
-      </div>
-
-      <div class="input">
-        <label>About You *</label>
-        <textarea name="bio" rows="3"></textarea>
-      </div>
-
-      <button type="submit">Submit</button>
-    </form>
+    <a class="button" href="#join">Join Us</a>
   </div>
 </header>
 

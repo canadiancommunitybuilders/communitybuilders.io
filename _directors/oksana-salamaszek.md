@@ -1,6 +1,7 @@
 ---
 name: Oksana Salamaszek
-slack: oksy_twg 
+title: Community Engagement Coordinator, TWG
+slack: oksy_twg
 twitter: OfficialOksy
 ---
 

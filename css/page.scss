@@ -3,25 +3,3 @@
 
 @import "base";
 @import "variables";
-
-main {
-  color: $blue;
-  text-align: center;
-  padding: $padding * 2 0;
-
-  flex-grow: 1;
-
-  h2 {
-    margin-bottom: $padding;
-  }
-
-  h4 {
-    &:after {
-      display: none;
-    }
-  }
-}
-
-footer {
-  flex-grow: 0;
-}

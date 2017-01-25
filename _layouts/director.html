@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<header>
+  <div class="container">
+    <a href="/"><img class="logo" src="/assets/images/logo-full.png"/></a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="row">
+    <div class="col col-lg-6">
+      <img class="photo" src="/assets/images{{ page.url | replace: '/index.html', '.jpg' }}"/>
+      <h1>{{ page.name }}</h1>
+      <p>{{ page.title }}</p>
+
+      <i class="fa fa-slack"></i> <a href="https://cancommunitybuilders.slack.com/team/{{ page.slack }}">@{{ page.slack }}</a><br/>
+      {% if page.twitter %}<i class="fa fa-twitter"></i> <a href="https://twitter.com/{{ page.twitter }}" target="_blank">@{{ page.twitter }}</a>{% endif %}
+    </div>
+
+    <div class="col col-lg-6">
+      {{ content }}
+    </div>
+  </div>
+</main>

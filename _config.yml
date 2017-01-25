@@ -6,7 +6,15 @@ url: https://communitybuilders.io
 twitter: communi_build
 
 collections:
-  - directors
+  directors:
+    output: true
+    permalink: /directors/:path/index:output_ext
+
+defaults:
+  - scope:
+      type: directors
+    values:
+      layout: director
 
 gems:
 - jekyll-redirect-from

@@ -1,12 +1,43 @@
-<footer>
+<footer class="primary">
   <div class="container">
+    <div class="row">
+      <div class="col col-md-6 cta">Join Canada's growing community of builders.</div>
+
+      <div class="col col-md-6">
+        <form action="https://formspree.io/communitybuildersio@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="{{ site.url }}/thanks/"/>
+          <input type="hidden" name="_subject" value="New Application"/>
+
+          <h2>Join Us</h2>
+
+          <div class="input">
+            <input type="text" name="name" placeholder="Full Name" required/>
+          </div>
+
+          <div class="input">
+            <input type="email" name="email" placeholder="Email Address" required/>
+          </div>
+
+          <div class="input">
+            <input type="text" name="bio" placeholder="About You" required/>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+  </div>
+</footer>
+
+<footer class="secondary">
+  <div class="container">
+    <p><img src="/assets/images/logo-mini.png"/> &copy;{{ site.time | date: '%Y' }} Canadian Community Builders. <span>Design by <a href="http://www.stellakonopski.com/">Stella Konopski</a></span></p>
+
     <div class="social">
       <a href="https://cancommunitybuilders.slack.com/" target="_blank"><i class="fa fa-lg fa-fw fa-slack"></i></a>
+      <a href="https://blog.communitybuilders.io/" target="_blank"><i class="fa fa-lg fa-fw fa-medium"></i></a>
       <a href="https://twitter.com/communi_build" target="_blank"><i class="fa fa-lg fa-fw fa-twitter-square"></i></a>
       <a href="https://www.instagram.com/community_builders/" target="_blank"><i class="fa fa-lg fa-fw fa-instagram"></i></a>
       <a href="https://www.facebook.com/commbuilders/" target="_blank"><i class="fa fa-lg fa-fw fa-facebook-square"></i></a>
     </div>
-
-    &copy;{{ site.time | date: '%Y' }} Canadian Community Builders | All Rights Reserved
   </div>
 </footer>

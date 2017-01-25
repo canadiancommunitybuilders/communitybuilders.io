@@ -4,31 +4,74 @@ layout: home
 
 <section id="directors">
   <div class="container">
+
     <h2>Directors</h2>
 
-    {% for director in site.directors %}
-      {% assign id = director.name | slugify %}
+    <div class="row">
+      {% for director in site.directors %}
+        {% assign id = director.name | slugify %}
 
-      <a href="/directors/#{{ id }}" class="director" style="background-image: url('/assets/images/directors/{{ id }}.jpg')" data-id="{{ director.name | slugify }}">
-        <h3>{{ director.name }}</h3>
-      </a>
-    {% endfor %}
+        <div class="col col-lg-6 col-md-6">
+          <a href="{{ director.url | replace: 'index.html', '' }}" class="picture">
+            <img src="/assets/images/directors/{{ id }}.jpg" alt="{{ director.name | slugify }}"/>
+          </a>
+
+          <h3>{{ director.name }}</h3>
+
+          <p>{{ director.title }}</p>
+
+          <a href="{{ director.url | replace: 'index.html', '' }}">View bio <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
 <section id="conduct">
   <div class="container">
-    {% capture conduct %}{% include conduct.md %}{% endcapture %}
-    {{ conduct | markdownify }}
+    <h2>Code of Conduct</h2>
+
+    <div class="row">
+      <div class="col col-md-6">
+        <p><strong>No spamming.</strong> We encourage participation in authentic way. This way you help contribute to the health and longevity of the group.</p>
+
+        <p><strong>We do not tolerate disrespectful behaviour</strong> towards other members of the community, this includes demeaning, discriminatory or harassing messages. Exercise consideration. Basically: “Don't be that guy (or girl)”.</p>
+
+        <p><strong>Attempt collaboration before conflict.</strong> No one is perfect, but let's try to understand why we disagree first. Learning to de-escalate a hostile situation is a life skill, let's practice some of it here.</p>
+
+        <p><strong>Don't keep silent if you observe hurtful behaviour.</strong> One can only try and fix what one is aware of. Please report your concerns to <a href="mailto:communitybuildersio@gmail.com">communitybuildersio@gmail.com</a>. All reports will be handled with discretion.</p>
+      </div>
+
+      <div class="col col-md-6">
+        <p>It's simple, this is <em>a curated group made by community builders for community builders</em>. You must be a community builder to join. It is for community builders to learn from each other first and foremost.</p>
+
+        <p>We assume everyone in our community is intelligent and well meaning. We will not tell you what to do, however there are a few things that this group requires in order for it to operate at full value to its members:</p>
+
+        <p>Community Builders are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, age, sexual orientation, ability, ethnicity, socioeconomic status, technological choices, and religion (or lack thereof).</p>
+
+        <p>Community Builders reserves the right to ban those that do not follow the basic tenants of this code of conduct after fair warning and prior discussion with moderators.</p>
+      </div>
   </div>
 </section>
 
 <section id="advisors">
-  <h2>Advisors</h2>
-
   <div class="container">
+
+    <h2>Advisors</h2>
+
+    <div class="row">
     {% for advisor in site.data.advisors %}
-      <a href="{{ advisor.link }}" target="_blank"><img alt="{{ advisor.name }}" src="/assets/images/advisors/{{ advisor.name | slugify }}.jpg"/></a>
+      <div class="col col-lg-6 col-md-6">
+        <a href="{{ advisor.link }}" target="_blank" class="picture">
+          <img alt="{{ advisor.name }}" src="/assets/images/advisors/{{ advisor.name | slugify }}.jpg"/>
+        </a>
+
+        <h3>{{ advisor.name }}</h3>
+
+        <p>{{ advisor.title }}</p>
+
+        <a href="{{ advisor.link }}">View bio <i class="fa fa-long-arrow-right"></i></a>
+      </div>
     {% endfor %}
   </div>
 </section>

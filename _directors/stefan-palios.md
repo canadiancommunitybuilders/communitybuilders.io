@@ -1,5 +1,6 @@
 ---
 name: Stefan Palios
+title: Sales & Partnerships, HackerNest
 slack: stefanpalios1 
 twitter: stefanpalios
 ---

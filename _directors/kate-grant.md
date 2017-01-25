@@ -1,5 +1,6 @@
 ---
 name: Kate Grant
+title: Marketing and Sales Lead, PowerHub
 slack: kate
 twitter: KateLGrant
 ---

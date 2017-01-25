@@ -1,5 +1,6 @@
 ---
 name: Ahmad Nassri
+title: Founder & CEO, Bench CI
 slack: ahmadnassri
 twitter: ahmadnassri
 ---

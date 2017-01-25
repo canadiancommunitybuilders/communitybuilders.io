@@ -1,5 +1,6 @@
 ---
 name: Alex Bevilacqua
+title: Partnerships & Growth, Picatic
 slack: alex_pictatic
 ---
 

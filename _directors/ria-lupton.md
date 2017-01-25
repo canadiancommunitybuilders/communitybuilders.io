@@ -1,5 +1,6 @@
 ---
 name: Ria Lupton
+title: Marketing Manager, RightSleeve Marketing Inc
 slack: ria.lupton
 twitter: roastedkeyboard
 ---

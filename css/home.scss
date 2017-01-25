@@ -5,302 +5,159 @@
 @import "variables";
 
 header {
-  background-position: 0 0;
-  padding-bottom: $diagnoal-height + $padding;
-
-  &:after {
-    @include diagonal($orange);
+  .about p {
+    margin: 40px 0 0 0;
+    width: 60%;
+    line-height: 1.24;
+    font-family: 'Poppins', sans-serif;
   }
 
-  .brand {
-    width: 100%;
+  .button {
+    display: inline-block;
+    padding: 8px 17px 12px 22px;
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color: $orange-yellow;
+    margin-bottom: 40px;
 
-    img {
-      max-width: 100%;
-      border-bottom: 2px solid white;
-    }
-
-    p {
-      max-width: 100%;
-      text-align: center;
-
-      color: white;
-      font-size: 20px;
-
-      padding-top: $padding / 2;
-      margin: 0;
-    }
-
-    .social {
-      padding: $padding 0;
-      justify-content: center;
-    }
-  }
-
-  form {
-    display: block;
-    width: 100%;
-    padding: $padding / 2;
-    border: 2px solid white;
-
-    color: white;
-
-    h2 {
-      color: white;
-      font-size: 20px;
-      font-weight: 700;
-
-      margin-bottom: $padding / 2;
-
-      &:after {
-        display: none;
-      }
-    }
-
-    .input {
-      * {
-        display: block;
-        margin: 0;
-      }
-
-      label {
-        font-size: 14px;
-      }
-
-      input, textarea {
-        width: 100%;
-        margin-bottom: $padding / 4;
-        border: 1px solid #666;
-        padding: 8px 12px;
-        font-size: 14px;
-        line-height: 15px;
-
-        &:focus {
-          outline: none;
-          border: 1px solid #666;
-        }
-      }
-    }
-
-    button {
-      display: block;
-      width: 100%;
-
-      color: white;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-
-      padding: 8px 12px;
-
-      background-color: $orange;
-      border: none;
-      cursor: pointer;
-
-      &:hover {
-        background-color: $darkorange;
-      }
-    }
+    color: $black;
+    font-size: 20px;
   }
 }
 
 h2 {
-  margin: 0 0 $padding 0;
+  font-size: 22px;
+
+  margin-bottom: 40px;
 }
 
-section {
-  padding: $padding 0;
-}
 
+#advisors,
 #directors {
-  background-color: $orange;
+  color: white;
+  background-color: $grape-purple;
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  padding-top: 100px;
 
-  h2 {
+  .picture {
+    display: block;
+    height: 320px;
     width: 100%;
-    color: white;
-
-    &:after {
-      border-color: white
-    }
-  }
-
-  .director {
-    width: 100px;
-    height: 100px;
-
-    margin: $padding / 4;
-    border-radius: 100%;
-    background-size: cover;
+    background-color: #d9e0e6;
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
-    text-decoration: none;
-
-    &:hover h3 {
-      opacity: 1
-    }
-
-    h3 {
-      pointer-events: none;
-
-      border-radius: inherit;
-      margin: 0;
-
-      opacity: 0;
-      height: 100%;
+    &:before {
+      position: absolute;
+      content: '';
       width: 100%;
+      height: 100%;
+      opacity: .2;
+      background-image: url('/assets/images/logo-mini.png');
+      background-size: 50px;
+    }
 
-      // background-color: rgba(248,163,110,.5);
-      background-color: transparentize($blue, .5);
-
-      color: white;
-      font-size: 16px;
-      text-align: center;
-
-      transition: .5s opacity;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &:after {
-        display: none;
-      }
+    img {
+      height: 250px;
+      border-radius: 100%;
+      z-index: 1;
     }
   }
-}
 
-#conduct {
-  position: relative;
-  padding: $diagnoal-height + $padding * 2 0;
-
-  line-height: 2em;
-
-  h2 {
-    color: $blue;
+  h3 {
+    margin: 20px 0 8px 0;
+    color: white;
+    font-size: 32px;
   }
 
-  h4 {
-    text-transform: uppercase;
+  p {
+    margin-bottom: 14px;
   }
 
-  &:before {
-    @include diagonal($orange);
-    transform: rotate(180deg);
-    content: '';
+  a {
     display: block;
-    position: absolute;
-    top: 0;
-    z-index: 3;
+    color: $orange-yellow;
+    font-size: 18px;
+    font-style: italic;
+
+    i {
+      font-size: 14px;
+      margin-left: 5px;
+    }
   }
 
-  &:after {
-    @include diagonal($blue);
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    z-index: 3;
+  .col {
+    margin-bottom: 60px;
   }
 }
 
 #advisors {
-  color: white;
-  background-color: $blue;
+  background-color: #f8fafc;
 
-  position: relative;
-  padding: $diagnoal-height + $padding 0;
-
-  h2 {
-    color: white;
-
-    &:after {
-      border-color: white;
-    }
+  h2,
+  h3,
+  p {
+    color: $black;
   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    img {
-      display: block;
-      max-height: 200px;
-      border-radius: 100%;
-      margin: $padding / 2;
-    }
+  a {
+    color: $grape-purple;
   }
 }
 
-/* Small devices (tablets, 768px and up) */
+#conduct {
+  padding-top: 100px;
+
+  line-height: 1.5;
+
+  strong {
+    font-style: italic;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   header {
-    .brand {
+    .about p {
       width: 50%;
-
-      img {
-        max-width: 100%;
-      }
-
-      p {
-        max-width: 100%;
-        text-align: left;
-      }
-
-      .social {
-        justify-content: flex-start;
-      }
-    }
-
-    form {
-      width: 50%;
+      font-size: 30px;
+      font-weight: 700;
     }
   }
 
-  #directors {
-    .director {
-      width: 150px;
-      height: 150px;
+  #conduct {
+    background: linear-gradient(90deg, rgba($orange-yellow, .1) 50%, #FFFFFF 50%);
+
+    .col:first-of-type {
+      padding-right: 100px;
+      padding-bottom: 100px;
+    }
+
+    .col:last-of-type {
+      padding-left: 100px;
+      padding-bottom: 100px;
     }
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   header {
-    .brand {
-      width: 75%;
-
-      img {
-        max-width: 50%;
-      }
-
-      p {
-        max-width: 70%;
-        text-align: left;
-      }
-
-      .social {
-        justify-content: flex-start;
-      }
+    .about p {
+      margin: 118px 0 0 0;
+      width: 60%;
+      font-size: 42px;
     }
 
-    form {
-      width: 25%;
-    }
-  }
-
-  #directors {
-    .director {
-      width: 200px;
-      height: 200px;
+    .button {
+      margin-bottom: 0;
     }
   }
 }
