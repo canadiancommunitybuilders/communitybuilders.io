@@ -1,6 +1,6 @@
 ---
 name: Nora Bieberstein
-title: Community Manager, OneEleven 111
+title: Community Manager, OneEleven
 slack: nora
 twitter: NoraVBieber
 ---
