@@ -36,7 +36,7 @@ header {
   padding-top: 40px;
 
   min-height: 350px;
-  background-image: url('/assets/images/illustration.svg'), url('/assets/images/illustration-bg.png');
+  background-image: url('/assets/images/illustration.svg'), linear-gradient(to top, $grape-purple, $grape-purple 5px, white 0px, white);
   background-repeat: no-repeat, repeat-x;
   background-size: contain, 100% 40%;
   background-position: center calc(100% + 1px), bottom;
