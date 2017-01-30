@@ -11,11 +11,9 @@ h1 {
   color: $black;
 }
 
-.photo {
-  border-radius: 50%;
-  width: 150px;
-  margin-bottom: 40px;
-  text-align: center;
+header {
+  background-size: cover;
+  background-position: top center;
 }
 
 a, a:hover {

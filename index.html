@@ -12,9 +12,7 @@ layout: home
         {% assign id = director.name | slugify %}
 
         <div class="col col-lg-6 col-md-6">
-          <a href="{{ director.url | replace: 'index.html', '' }}" class="picture">
-            <img src="/assets/images/directors/{{ id }}.jpg" alt="{{ director.name | slugify }}"/>
-          </a>
+          <a href="{{ director.url | replace: 'index.html', '' }}" class="picture" style="background-image: url('/assets/images/directors/{{ id }}.jpg')"></a>
 
           <h3>{{ director.name }}</h3>
 
@@ -62,9 +60,7 @@ layout: home
     <div class="row">
     {% for advisor in site.data.advisors %}
       <div class="col col-lg-6 col-md-6">
-        <a href="{{ advisor.link }}" target="_blank" class="picture">
-          <img alt="{{ advisor.name }}" src="/assets/images/advisors/{{ advisor.name | slugify }}.jpg"/>
-        </a>
+        <a href="{{ advisor.link }}" target="_blank" class="picture" style="background-image: url('/assets/images/advisors/{{ advisor.name | slugify }}.jpg')"></a>
 
         <h3>{{ advisor.name }}</h3>
 
