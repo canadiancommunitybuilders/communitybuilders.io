@@ -7,7 +7,7 @@ layout: home
 
     <h2>Directors</h2>
 
-    <div class="row">
+    <div class="row directors">
       {% for director in site.directors %}
         {% assign id = director.name | slugify %}
 
@@ -80,3 +80,9 @@ layout: home
   </div>
 </section>
 
+<script>
+  var ul = document.querySelector('.directors')
+  for (var i = ul.children.length; i >= 0; i--) {
+      ul.appendChild(ul.children[Math.random() * i | 0])
+  }
+</script>
