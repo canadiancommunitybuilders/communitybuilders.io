@@ -2,6 +2,16 @@
 layout: home
 ---
 
+<script>
+  document.addEventListener('domcontentloaded', function () {
+    var ul = document.querySelector('.directors')
+
+    for (var i = ul.children.length; i >= 0; i--) {
+      ul.appendChild(ul.children[Math.random() * i | 0])
+    }
+  })
+</script>
+
 <section id="directors">
   <div class="container">
 
@@ -79,13 +89,3 @@ layout: home
     <a href="https://breather.com" target="_blank"><img src="/assets/images/partners/breather.png"/></a>
   </div>
 </section>
-
-<script>
-  document.addEventListener('domcontentloaded', function () {
-    var ul = document.querySelector('.directors')
-
-    for (var i = ul.children.length; i >= 0; i--) {
-      ul.appendChild(ul.children[Math.random() * i | 0])
-    }
-  })
-</script>
