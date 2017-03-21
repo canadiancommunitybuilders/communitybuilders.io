@@ -1,7 +1,7 @@
 ---
 name: Ahmad Nassri
-title: Founder & CEO
-company: Bench CI
+title: Founder
+company: TechMasters, Bench CI
 slack: ahmadnassri
 twitter: ahmadnassri
 ---
