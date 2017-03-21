@@ -1,6 +1,7 @@
 ---
 name: Ainsleigh Burelle
-title: Marketing Associate, NEXT Canada
+title: Marketing Associate
+company: NEXT Canada
 slack: ainsleighburelle 
 twitter: ainsleelise
 ---

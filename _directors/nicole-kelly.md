@@ -1,6 +1,7 @@
 ---
 name: Nicole Kelly
-title: Community Director, OMERS Ventures
+title: Community Director
+company: OMERS Ventures
 slack: nicolekelly
 twitter: Nicole_Kelly
 ---

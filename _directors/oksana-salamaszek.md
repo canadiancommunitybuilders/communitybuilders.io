@@ -1,6 +1,7 @@
 ---
 name: Oksana Salamaszek
-title: Community Engagement Coordinator, TWG
+title: Community Engagement Coordinator
+company: TWG
 slack: oksy_twg
 twitter: OfficialOksy
 ---
