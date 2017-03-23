@@ -16,6 +16,8 @@ defaults:
     values:
       layout: director
 
+include: [.well-known]
+
 gems:
 - jekyll-redirect-from
 - jekyll-admin
