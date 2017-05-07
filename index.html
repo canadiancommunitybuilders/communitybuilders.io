@@ -59,7 +59,7 @@ layout: home
 
     <div class="row">
     {% for advisor in site.data.advisors %}
-      <div class="col col-lg-3 col-md-3">
+      <div class="col col-lg-4 col-md-4">
         <a href="{{ advisor.link }}" target="_blank" class="picture" style="background-image: url('/assets/images/advisors/{{ advisor.name | slugify }}.jpg')"></a>
 
         <h3>{{ advisor.name }}</h3>
