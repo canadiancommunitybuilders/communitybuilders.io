@@ -1,7 +1,7 @@
 ---
 name: Nora Bieberstein
-title: Community Manager
-company: OneEleven
+title: Senior Manager, Innovation Partnerships
+company: RBC
 slack: nora
 twitter: NoraVBieber
 ---
