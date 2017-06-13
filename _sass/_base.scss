@@ -36,10 +36,12 @@ header {
   padding-top: 40px;
 
   min-height: 350px;
-  background-image: url('/assets/images/illustration.svg'), linear-gradient(to top, $grape-purple, $grape-purple 5px, white 0px, white);
+  background-image: url('/assets/images/banner.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center calc(100% + 1px);
+  background-position: center bottom;
+
+  transition: background-image 1.5s;
 
   .logo {
     width: 125px;
@@ -165,6 +167,9 @@ header {
   }
 }
 
+object[type="image/svg+xml"] {
+  height: 0;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { }
@@ -193,7 +198,7 @@ header {
 @media (min-width: 992px) {
   header {
     padding-top: 60px;
-    min-height: 720px;
+    min-height: 760px;
   }
 
 
