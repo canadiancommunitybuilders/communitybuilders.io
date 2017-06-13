@@ -6,9 +6,11 @@ layout: default
   <div class="container">
     <a href="/"><img class="logo" src="/assets/images/logo-full.png"/></a>
 
-    <div class="about">{{ site.description | markdownify }}</div>
-
     <a class="button" href="#join">Join Us</a>
+
+    <div class="row">
+      <div class="col-10 col-sm-9 col-md-8 col-lg-6 about">{{ site.description | markdownify }}</div>
+    </div>
   </div>
 </header>
 

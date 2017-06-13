@@ -6,22 +6,27 @@
 
 header {
   .about p {
-    margin: 40px 0 0 0;
-    width: 60%;
+    margin: 30px 0 0 0;
     line-height: 1.24;
     font-family: 'Poppins', sans-serif;
+    font-size: 24px;
   }
 
   .button {
+    float: right;
     display: inline-block;
     padding: 8px 17px 12px 22px;
-    margin-top: 30px;
     border-radius: 4px;
     background-color: $orange-yellow;
-    margin-bottom: 40px;
 
     color: $black;
     font-size: 20px;
+    font-weight: 600;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
@@ -75,7 +80,7 @@ h2 {
     }
   }
 
-  .col {
+  [class^=col] {
     margin-bottom: 60px;
   }
 }
@@ -112,23 +117,7 @@ h2 {
 @media (min-width: 768px) {
   header {
     .about p {
-      width: 50%;
       font-size: 30px;
-      font-weight: 700;
-    }
-  }
-
-  #conduct {
-    background: linear-gradient(90deg, rgba($orange-yellow, .1) 50%, #FFFFFF 50%);
-
-    .col:first-of-type {
-      padding-right: 100px;
-      padding-bottom: 100px;
-    }
-
-    .col:last-of-type {
-      padding-left: 100px;
-      padding-bottom: 100px;
     }
   }
 }
@@ -138,12 +127,26 @@ h2 {
   header {
     .about p {
       margin: 118px 0 0 0;
-      width: 60%;
       font-size: 42px;
+      font-weight: 600;
     }
 
     .button {
       margin-bottom: 0;
+    }
+  }
+
+  #conduct {
+    background: linear-gradient(90deg, rgba($orange-yellow, .1) 50%, #FFFFFF 50%);
+
+    [class^=col]:first-of-type {
+      padding-right: 100px;
+      padding-bottom: 100px;
+    }
+
+    [class^=col]:last-of-type {
+      padding-left: 100px;
+      padding-bottom: 100px;
     }
   }
 }

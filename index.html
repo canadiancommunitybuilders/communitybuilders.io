@@ -11,7 +11,7 @@ layout: home
       {% for director in site.directors %}
         {% assign id = director.name | slugify %}
 
-        <div class="col col-lg-4 col-md-4">
+        <div class="col-12 col-lg-4 col-md-4">
           <a href="{{ director.url | replace: 'index.html', '' }}" class="picture" style="background-image: url('/assets/images/directors/{{ id }}.jpg')"></a>
 
           <h3>{{ director.name }}</h3>
@@ -30,7 +30,7 @@ layout: home
     <h2>Code of Conduct</h2>
 
     <div class="row">
-      <div class="col col-md-6">
+      <div class="col-12 col-lg-6">
         <p><strong>No spamming.</strong> We encourage participation in authentic way. This way you help contribute to the health and longevity of the group.</p>
 
         <p><strong>We do not tolerate disrespectful behaviour</strong> towards other members of the community, this includes demeaning, discriminatory or harassing messages. Exercise consideration. Basically: “Don't be that guy (or girl)”.</p>
@@ -40,7 +40,7 @@ layout: home
         <p><strong>Don't keep silent if you observe hurtful behaviour.</strong> One can only try and fix what one is aware of. Please report your concerns to <a href="mailto:communitybuildersio@gmail.com">communitybuildersio@gmail.com</a>. All reports will be handled with discretion.</p>
       </div>
 
-      <div class="col col-md-6">
+      <div class="col-12 col-lg-6">
         <p>It's simple, this is <em>a curated group made by community builders for community builders</em>. You must be a community builder to join. It is for community builders to learn from each other first and foremost.</p>
 
         <p>We assume everyone in our community is intelligent and well meaning. We will not tell you what to do, however there are a few things that this group requires in order for it to operate at full value to its members:</p>
@@ -59,7 +59,7 @@ layout: home
 
     <div class="row">
     {% for advisor in site.data.advisors %}
-      <div class="col col-lg-4 col-md-4">
+      <div class="col-12 col-lg-4 col-md-4">
         <a href="{{ advisor.link }}" target="_blank" class="picture" style="background-image: url('/assets/images/advisors/{{ advisor.name | slugify }}.jpg')"></a>
 
         <h3>{{ advisor.name }}</h3>

@@ -20,7 +20,7 @@ a, a:hover {
   color: $grape-purple;
 }
 
-.col {
+[class^=col] {
   padding-top: 40px;
 
   &:first-of-type {
@@ -44,7 +44,7 @@ a, a:hover {
     width: 200px;
   }
 
-  .col {
+  [class^=col] {
     padding: 80px 0;
   }
 }

@@ -10,7 +10,7 @@ layout: default
 
 <main class="container">
   <div class="row">
-    <div class="col col-lg-6">
+    <div class="col-12 col-lg-6">
       <h1>{{ page.name }}</h1>
       <p>{{ page.title }}, {{ page.company }}</p>
 
@@ -18,7 +18,7 @@ layout: default
       {% if page.twitter %}<i class="fa fa-twitter"></i> <a href="https://twitter.com/{{ page.twitter }}" target="_blank">@{{ page.twitter }}</a>{% endif %}
     </div>
 
-    <div class="col col-lg-6">
+    <div class="col-12 col-lg-6">
       {{ content }}
     </div>
   </div>
