@@ -15,10 +15,9 @@ const length = colors.length
 function diversify () {
   const svg = document.querySelector('#banner').contentDocument
 
-  svg.querySelector('#person-1').setAttribute('fill', fitzpatrick[colors[Math.floor(Math.random() * length)]])
-  svg.querySelector('#person-2').setAttribute('fill', fitzpatrick[colors[Math.floor(Math.random() * length)]])
-  svg.querySelector('#person-3').setAttribute('fill', fitzpatrick[colors[Math.floor(Math.random() * length)]])
-  svg.querySelector('#person-4').setAttribute('fill', fitzpatrick[colors[Math.floor(Math.random() * length)]])
+  svg.querySelectorAll('.human').forEach(human => {
+    human.setAttribute('fill', fitzpatrick[colors[Math.floor(Math.random() * length)]])
+  })
 
   const xml = new XMLSerializer().serializeToString(svg)
   const encoded = window.btoa(xml)
