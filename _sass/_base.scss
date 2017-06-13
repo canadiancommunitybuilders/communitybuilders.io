@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Poppins:600,700|Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,700|Open+Sans');
 
 @import "variables";
 
@@ -20,7 +20,7 @@ body {
   flex-grow: 1;
 
   color: $black;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Open Sans', serif;
   font-size: 20px;
 }
 
@@ -64,7 +64,10 @@ footer.primary {
     display: block;
 
     input {
-      width: 100%;
+      &:not([type="checkbox"]) {
+        width: 100%;
+      }
+
       font-size: 18px;
       line-height: 1.67;
       padding-bottom: 5px;
