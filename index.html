@@ -2,28 +2,7 @@
 layout: home
 ---
 
-<section id="directors">
-  <div class="container">
-
-    <h2>Directors</h2>
-
-    <div class="row directors">
-      {% for director in site.directors %}
-        {% assign id = director.name | slugify %}
-
-        <div class="col-12 col-lg-4 col-md-4">
-          <a href="{{ director.url | replace: 'index.html', '' }}" class="picture" style="background-image: url('/assets/images/directors/{{ id }}.jpg')"></a>
-
-          <h3>{{ director.name }}</h3>
-
-          <p>{{ director.title }}<br/>{{ director.company }}</p>
-
-          <a href="{{ director.url | replace: 'index.html', '' }}">View bio <i class="fa fa-long-arrow-right"></i></a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+{% include join.html %}
 
 <section id="conduct">
   <div class="container">
@@ -49,6 +28,66 @@ layout: home
 
         <p>Community Builders reserves the right to ban those that do not follow the basic tenants of this code of conduct after fair warning and prior discussion with moderators.</p>
       </div>
+  </div>
+</section>
+
+<section id="survey">
+  <div class="container">
+    <h2>Community Survey</h2>
+
+    <iframe class="hidden-md-down" src="https://communitybuilders.typeform.com/to/iSQZKg"></iframe>
+
+    <div class="hidden-lg-up">
+      <p>Please take 5 minutes to participate in this short, anonymous survey.</p>
+      <p><small>The results will be used for a report that will be published in Canadian Community Builders' online channels. The data will help to benchmark career growth and best practices in the field of community building.</small></p>
+
+      <a class="btn btn-primary" href="https://communitybuilders.typeform.com/to/iSQZKg">Take the survey now</a>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+  <div class="container">
+    <h2>Upcoming Events</h2>
+
+    <iframe class="hidden-md-down" src="https://www.picatic.com/events/widget/112475?width=std&amp;event_title=true&amp;event_time=true&amp;event_location=true&amp;event_image=true&amp;ticket_description=true" frameborder="0"></iframe>
+
+    <div class="row hidden-lg-up">
+      <div class="col-12">
+        <p>Community Builders Summer Kickoff Party!</p>
+      </div>
+
+      <div class="col-6">
+        <small>Thu, Jun 15 2017</small>
+      </div>
+
+      <div class="col-6">
+        <a class="btn btn-primary" href="https://www.picatic.com/CBRooftopMix17?utm_source=promotion&amp;utm_medium=button&amp;utm_campaign=112475">Tickets</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="directors">
+  <div class="container">
+
+    <h2>Directors</h2>
+
+    <div class="row directors">
+      {% for director in site.directors %}
+        {% assign id = director.name | slugify %}
+
+        <div class="col-12 col-lg-4 col-md-4">
+          <a href="{{ director.url | replace: 'index.html', '' }}" class="picture" style="background-image: url('/assets/images/directors/{{ id }}.jpg')"></a>
+
+          <h3>{{ director.name }}</h3>
+
+          <p>{{ director.title }}<br/>{{ director.company }}</p>
+
+          <a href="{{ director.url | replace: 'index.html', '' }}">View bio <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
