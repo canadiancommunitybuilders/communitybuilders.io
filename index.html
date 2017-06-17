@@ -46,27 +46,31 @@ layout: home
   </div>
 </section>
 
-<section id="events">
-  <div class="container">
-    <h2>Upcoming Events</h2>
+{% if site.events.size %}
+  <section id="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
 
-    <iframe class="hidden-md-down" src="https://www.picatic.com/events/widget/112475?width=std&amp;event_title=true&amp;event_time=true&amp;event_location=true&amp;event_image=true&amp;ticket_description=true" frameborder="0"></iframe>
+      {% for event in site.events %}
+        <iframe class="hidden-md-down" src="{{ event.iframe }}" frameborder="0"></iframe>
 
-    <div class="row hidden-lg-up">
-      <div class="col-12">
-        <p>Community Builders Summer Kickoff Party!</p>
-      </div>
+        <div class="row hidden-lg-up">
+          <div class="col-12">
+            <p>{{ event.title }}</p>
+          </div>
 
-      <div class="col-6">
-        <small>Thu, Jun 15 2017</small>
-      </div>
+          <div class="col-6">
+            <small>{{ event.date }}</small>
+          </div>
 
-      <div class="col-6">
-        <a class="btn btn-primary" href="https://www.picatic.com/CBRooftopMix17?utm_source=promotion&amp;utm_medium=button&amp;utm_campaign=112475">Tickets</a>
-      </div>
+          <div class="col-6">
+            <a class="btn btn-primary" href="{{ event.link }}">Tickets</a>
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
+{% endif %}
 
 <section id="directors">
   <div class="container">

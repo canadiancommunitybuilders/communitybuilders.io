@@ -18,6 +18,12 @@ defaults:
 
 include: [.well-known]
 
+events:
+  # - iframe: https://www.picatic.com/events/widget/112475?width=std&event_title=true&event_time=true&event_location=true&event_image=true&ticket_description=true
+  #   link: https://www.picatic.com/CBRooftopMix17?utm_source=promotion&utm_medium=button&utm_campaign=112475
+  #   title: Community Builders Summer Kickoff Party!
+  #   date: Thu, Jun 15 2017
+
 gems:
 - jekyll-redirect-from
 - jekyll-admin
