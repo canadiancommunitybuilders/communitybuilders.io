@@ -38,7 +38,7 @@ header {
   min-height: 350px;
   background-image: url('/assets/images/banner.svg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: contain;
   background-position: center bottom;
 
   transition: background-image 1.5s;
