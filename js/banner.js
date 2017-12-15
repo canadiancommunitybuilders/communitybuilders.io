@@ -26,7 +26,6 @@ function diversify () {
 }
 
 window.addEventListener('load', () => {
-  document.querySelector('header').addEventListener('click', diversify)
-
   diversify()
+  document.querySelector('header').addEventListener('click', diversify)
 })
