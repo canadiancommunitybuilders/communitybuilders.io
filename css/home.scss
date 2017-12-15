@@ -4,32 +4,6 @@
 @import "base";
 @import "variables";
 
-header {
-  .about p {
-    margin: 30px 0 0 0;
-    line-height: 1.24;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-  }
-
-  .button {
-    float: right;
-    display: inline-block;
-    padding: 8px 17px 12px 22px;
-    border-radius: 4px;
-    background-color: $orange-yellow;
-
-    color: $black;
-    font-size: 20px;
-    font-weight: 600;
-
-    &:hover {
-      color: white;
-      text-decoration: none;
-    }
-  }
-}
-
 h2 {
   font-size: 22px;
 
@@ -99,7 +73,7 @@ h2 {
   }
 }
 
-#conduct {
+#conduct-requirements {
   padding-top: 100px;
 
   line-height: 1.5;
@@ -142,30 +116,9 @@ h2 {
   padding: 100px 0;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  header {
-    .about p {
-      font-size: 30px;
-    }
-  }
-}
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  header {
-    .about p {
-      margin: 118px 0 0 0;
-      font-size: 42px;
-      font-weight: 600;
-    }
-
-    .button {
-      margin-bottom: 0;
-    }
-  }
-
-  #conduct {
+  #conduct-requirements {
     background: linear-gradient(90deg, rgba($orange-yellow, .1) 50%, #FFFFFF 50%);
 
     [class^=col]:first-of-type {

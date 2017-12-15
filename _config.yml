@@ -1,5 +1,5 @@
 title: Canadian Community Builders
-description: We are a curated group made by community builders for community builders.
+description: Connecting and supporting community builders.
 
 url: https://www.communitybuilders.io
 
@@ -24,6 +24,6 @@ events:
   #   title: Community Builders Summer Kickoff Party!
   #   date: Thu, Jun 15 2017
 
-gems:
-- jekyll-redirect-from
-- jekyll-admin
+plugins:
+  - jekyll-redirect-from
+  - jekyll-admin

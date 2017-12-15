@@ -43,8 +43,26 @@ header {
 
   transition: background-image 1.5s;
 
+  .text p {
+    margin: 30px 0 0 0;
+    line-height: 1.24;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+  }
+
   .logo {
     width: 125px;
+  }
+
+  .social {
+    float: right;
+
+    a {
+      color: $grape-purple;
+      .fa {
+        font-size: 2em;
+      }
+    }
   }
 }
 
@@ -113,14 +131,24 @@ header {
       }
     }
 
-    button {
+    button[type=submit] {
       margin-top: 15px;
       border-radius: 4px;
       background-color: $orange-yellow;
       border: none;
-      padding: 3px 20px 7px 20px;
-      font-size: 18px;
       line-height: 1.67;
+
+      color: $black;
+      font-weight: 600;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    a {
+      color: rgba(#ffffff, .6);
     }
   }
 }
@@ -176,6 +204,12 @@ object[type="image/svg+xml"] {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  header {
+    .text p {
+      font-size: 30px;
+    }
+  }
+
   footer {
     text-align: left;
 
@@ -199,6 +233,12 @@ object[type="image/svg+xml"] {
   header {
     padding-top: 60px;
     min-height: 760px;
+
+    .text p {
+      margin: 118px 0 0 0;
+      font-size: 42px;
+      font-weight: 600;
+    }
   }
 
 
