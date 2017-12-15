@@ -29,3 +29,5 @@ window.addEventListener('load', () => {
   diversify()
   document.querySelector('header').addEventListener('click', diversify)
 })
+
+setInterval(diversify, 5000)
