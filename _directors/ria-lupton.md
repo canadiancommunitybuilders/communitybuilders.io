@@ -1,7 +1,7 @@
 ---
 name: Ria Lupton
-title: Marketing Manager
-company: RightSleeve Marketing Inc
+title: Founder
+company: Community Builders
 slack: ria.lupton
 twitter: roastedkeyboard
 ---
