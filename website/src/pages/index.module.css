@@ -1,0 +1,7 @@
+@import '../css/variables.css';
+
+h2 {
+  font-size: 22px;
+
+  margin-bottom: 40px;
+}

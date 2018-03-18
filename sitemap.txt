@@ -1,4 +1,0 @@
----
----
-{% for page in site.pages %}{{ page.url | prepend: site.url }}
-{% endfor %}

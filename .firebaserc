@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "community-builders-canada",
+    "default": "community-builders-canada"
+  }
+}

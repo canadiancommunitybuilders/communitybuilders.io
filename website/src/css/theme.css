@@ -1,0 +1,45 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Poppins:600,700|Roboto';
+
+@import './variables.css';
+
+html {
+  display: flex;
+  height: 100%;
+
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+
+  color: var(--black);
+  font-family: 'Roboto', serif;
+  font-size: 20px;
+}
+
+main {
+  flex: 1 1 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+object[type="image/svg+xml"] {
+  height: 0;
+}
+
+.btn-primary {
+  background-color: var(--orange-yellow);
+  border-color: var(--orange-yellow);
+
+  &:focus,
+  &:active {
+    background-color: var(--grape-purple);
+  }
+}

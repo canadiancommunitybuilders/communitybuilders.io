@@ -1,0 +1,60 @@
+@import '../../css/variables.css';
+
+.footer {
+  background-color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.14;
+
+  & .container {
+    height: 90px;
+  }
+
+  & span {
+    display: none;
+  }
+
+  & img {
+    width: 40px;
+    margin-right: 5px;
+  }
+
+  & p a {
+    color: var(--grape-purple);
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+
+    & span {
+      display: inline;
+    }
+
+    & .container {
+      display: flex;
+      align-items: center;
+
+      & p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.social {
+  margin-left: auto;
+
+  & a {
+    margin-left: 5px;
+
+    & i {
+      color: var(--black);
+    }
+
+    &:hover {
+      & i {
+        color: var(--grape-purple);
+      }
+    }
+  }
+}

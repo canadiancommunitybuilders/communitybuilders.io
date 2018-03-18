@@ -1,0 +1,121 @@
+@import '../../css/variables.css';
+
+.header {
+  :root {
+    --director: {
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+
+  padding-top: 40px;
+
+  min-height: 350px;
+  background-image: url('./banner.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+
+  /* transition: background-image 1.5s; */
+
+  @media (min-width: 992px) {
+    padding-top: 60px;
+    min-height: 760px;
+  }
+
+  &[director='april-dunford'] {
+    @apply --director;
+    background-image: url('../Humans/advisors/april-dunford.jpg');
+  }
+
+  &[director='holly-knowlman'] {
+    @apply --director;
+    background-image: url('../Humans/advisors/holly-knowlman.jpg');
+  }
+
+  &[director='karen-schulman-dupuis'] {
+    @apply --director;
+    background-image: url('../Humans/advisors/karen-schulman-dupuis.jpg');
+  }
+
+  &[director='ahmad-nassri'] {
+    @apply --director;
+    background-image: url('../Humans/directors/ahmad-nassri.jpg');
+  }
+
+  &[director='ainsleigh-burelle'] {
+    @apply --director;
+    background-image: url('../Humans/directors/ainsleigh-burelle.jpg');
+  }
+
+  &[director='alex-bevilacqua'] {
+    @apply --director;
+    background-image: url('../Humans/directors/alex-bevilacqua.jpg');
+  }
+
+  &[director='caitlin-dwyer'] {
+    @apply --director;
+    background-image: url('../Humans/directors/caitlin-dwyer.jpg');
+  }
+
+  &[director='kate-grant'] {
+    @apply --director;
+    background-image: url('../Humans/directors/kate-grant.jpg');
+  }
+
+  &[director='nicole-kelly'] {
+    @apply --director;
+    background-image: url('../Humans/directors/nicole-kelly.jpg');
+  }
+
+  &[director='nora-bieberstein'] {
+    @apply --director;
+    background-image: url('../Humans/directors/nora-bieberstein.jpg');
+  }
+
+  &[director='oksana-salamaszek'] {
+    @apply --director;
+    background-image: url('../Humans/directors/oksana-salamaszek.jpg');
+  }
+
+  &[director='ria-lupton'] {
+    @apply --director;
+    background-image: url('../Humans/directors/ria-lupton.jpg');
+  }
+}
+
+.social {
+  float: right;
+
+  & a {
+    color: var(--grape-purple);
+
+    & i {
+      font-size: 2em;
+    }
+  }
+}
+
+.text {
+  & p {
+    margin: 30px 0 0 0;
+    line-height: 1.24;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (min-width: 992px) {
+      margin: 118px 0 0 0;
+      font-size: 42px;
+      font-weight: 600;
+    }
+  }
+}
+
+.logo {
+  width: 125px;
+}
+

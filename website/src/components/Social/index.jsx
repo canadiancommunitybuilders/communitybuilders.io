@@ -1,0 +1,11 @@
+import React from 'react'
+
+export default ({className}) => (
+  <div className={`social ${className}`}>
+    <a href='https://cancommunitybuilders.slack.com/' target='_blank'><i className='fa fa-lg fa-fw fa-slack'></i></a>
+    <a href='https://blog.communitybuilders.io/' target='_blank'><i className='fa fa-lg fa-fw fa-medium'></i></a>
+    <a href='https://twitter.com/communi_build' target='_blank'><i className='fa fa-lg fa-fw fa-twitter-square'></i></a>
+    <a href='https://www.instagram.com/community_builders/' target='_blank'><i className='fa fa-lg fa-fw fa-instagram'></i></a>
+    <a href='https://www.facebook.com/commbuilders/' target='_blank'><i className='fa fa-lg fa-fw fa-facebook-square'></i></a>
+  </div>
+)

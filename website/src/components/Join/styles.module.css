@@ -1,0 +1,77 @@
+@import '../../css/variables.css';
+
+.join {
+  background-color: var(--grape-purple);
+  padding: 100px 0;
+  color: white;
+
+}
+
+.cta {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.17;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+
+  @media (min-width: 992px) {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+}
+
+.form {
+  width: 100%;
+  display: block;
+
+  & input {
+    &:not([type="checkbox"]) {
+      width: 100%;
+    }
+
+    font-size: 18px;
+    line-height: 1.67;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+    outline: 0;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid color(#ffffff alpha(40%));
+
+    &::placeholder {
+      color: color(#ffffff alpha(50%));
+    }
+  }
+
+  & button[type=submit] {
+    margin-top: 15px;
+    border-radius: 4px;
+    line-height: 1.67;
+
+    color: var(--black);
+    font-weight: 600;
+  }
+
+  & a {
+    color: color(#ffffff alpha(60%));
+  }
+}
+
+.button {
+  transition: color .2s linear !important;
+  cursor: pointer;
+  background-color: var(--orange-yellow);
+  border-color: var(--orange-yellow);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: white !important;
+    text-decoration: none;
+    background-color: var(--orange-yellow);
+    border-color: var(--orange-yellow);
+  }
+}

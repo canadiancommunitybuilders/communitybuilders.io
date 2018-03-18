@@ -1,0 +1,35 @@
+@import '../css/variables.css';
+
+.director {
+  & h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--black);
+  }
+
+  & a, & a:hover {
+    color: var(--grape-purple);
+  }
+
+  & [class^=col] {
+    padding-top: 40px;
+
+    &:first-of-type {
+      padding-right: 40px;
+
+      & p {
+        font-style: italic;
+      }
+    }
+
+    &:last-of-type {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+      padding: 80px 0;
+    }
+  }
+}

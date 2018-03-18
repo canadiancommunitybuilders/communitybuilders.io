@@ -1,0 +1,27 @@
+@import '../../css/variables.css';
+
+.survey {
+  padding: 100px 0;
+
+  & iframe {
+    display:block;
+    height:410px;
+    max-width:none;
+    width:100%;
+    border: 3px solid var(--grape-purple);
+    border-radius: 4px;
+    background-clip: padding-box;
+  }
+
+  & [class^="col"]:last-of-type {
+    text-align: right;
+  }
+
+  background-color: #f8fafc;
+
+  & iframe {
+    border: 3px solid var(--orange-yellow);
+    display: inline-block;
+    height: 600px;
+  }
+}

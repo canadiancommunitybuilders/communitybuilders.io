@@ -1,0 +1,111 @@
+@import '../../css/variables.css';
+
+.people {
+  color: white;
+  background-color: var(--grape-purple);
+
+  padding-top: 100px;
+
+  & [class^=col] {
+    margin-bottom: 60px;
+  }
+}
+
+.advisors {
+  background-color: #f8fafc;
+
+  & h2,
+  & h3,
+  & p {
+    color: var(--black);
+  }
+
+  & a {
+    color: var(--grape-purple);
+  }
+}
+
+.human {
+  & h3 {
+    margin: 20px 0 8px 0;
+    color: white;
+    font-size: 32px;
+  }
+
+  & p {
+    margin-bottom: 14px;
+  }
+
+  & a {
+    display: block;
+    color: var(--orange-yellow);
+    font-size: 18px;
+    font-style: italic;
+
+    &[class*='april-dunford'] {
+      background-image: url('./advisors/april-dunford.jpg');
+    }
+
+    &[class*='holly-knowlman'] {
+      background-image: url('./advisors/holly-knowlman.jpg');
+    }
+
+    &[class*='karen-schulman-dupuis'] {
+      background-image: url('./advisors/karen-schulman-dupuis.jpg');
+    }
+
+    &[class*='ahmad-nassri'] {
+      background-image: url('./directors/ahmad-nassri.jpg');
+    }
+
+    &[class*='ainsleigh-burelle'] {
+      background-image: url('./directors/ainsleigh-burelle.jpg');
+    }
+
+    &[class*='alex-bevilacqua'] {
+      background-image: url('./directors/alex-bevilacqua.jpg');
+    }
+
+    &[class*='caitlin-dwyer'] {
+      background-image: url('./directors/caitlin-dwyer.jpg');
+    }
+
+    &[class*='kate-grant'] {
+      background-image: url('./directors/kate-grant.jpg');
+    }
+
+    &[class*='nicole-kelly'] {
+      background-image: url('./directors/nicole-kelly.jpg');
+    }
+
+    &[class*='nora-bieberstein'] {
+      background-image: url('./directors/nora-bieberstein.jpg');
+    }
+
+    &[class*='oksana-salamaszek'] {
+      background-image: url('./directors/oksana-salamaszek.jpg');
+    }
+
+    &[class*='ria-lupton'] {
+      background-image: url('./directors/ria-lupton.jpg');
+    }
+
+    & i {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.picture {
+  height: 320px;
+  width: 100%;
+  background-color: #d9e0e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: top center;
+}
