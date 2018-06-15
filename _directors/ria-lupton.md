@@ -2,7 +2,7 @@
 name: Ria Lupton
 title: Founder
 company: Community Builders
-slack: ria.lupton
+slack: D252U60CE
 twitter: roastedkeyboard
 ---
 

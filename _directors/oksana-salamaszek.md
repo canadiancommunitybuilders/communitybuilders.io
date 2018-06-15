@@ -2,7 +2,7 @@
 name: Oksana Salamaszek
 title: Project Manager
 company: TWG
-slack: oksy_
+slack: D21R5HC4E
 twitter: OfficialOksy
 ---
 

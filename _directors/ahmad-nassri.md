@@ -2,7 +2,7 @@
 name: Ahmad Nassri
 title: Founder @ TechMasters
 company:  Principal Architect @ TELUS
-slack: ahmadnassri
+slack: D20TLCJMB
 twitter: ahmadnassri
 ---
 

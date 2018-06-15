@@ -3,7 +3,7 @@ name: Kate Grant
 title: Marketing and Sales Lead
 company: PowerHub
 slack: kate
-twitter: KateLGrant
+twitter: D34160KBM
 ---
 
 Kate Grant is the Marketing and Sales Lead at PowerHub where she is helping build a community for those in the renewable resources industry. She strongly believes that the future of energy is in renewables and tries every day to make the world a cleaner and greener place. 

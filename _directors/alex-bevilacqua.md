@@ -2,7 +2,7 @@
 name: Alex Bevilacqua
 title: Partnerships & Growth
 company: Picatic
-slack: alex_pictatic
+slack: D2U71R3BJ
 ---
 
 Alex Bevilacqua is in charge of  Partnerships and Growth at Picatic Toronto 
